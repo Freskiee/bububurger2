@@ -32,7 +32,7 @@ const featuredItems = [
   {
     title: 'Malteada Fresa',
     description: 'Cremosa malteada de fresa, con helado de fresa y mermelada de fresa, con deliciosos toppings.',
-    price: '$65',
+    price: '$130',
     imageUrl: MalteadaFresa,
   }
 ];

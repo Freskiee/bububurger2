@@ -3,126 +3,194 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
 import MenuCard from '../components/ui/MenuCard';
 import ChefCharacter from '../components/ui/ChefCharacter';
+import Sensata from '../assets/comida/sensata.jpg';
+import Doble from '../assets/comida/doble-queso-pina.jpg';
+import Olimpica from '../assets/comida/olimpica-burger.jpg';
+import Hawaiana from '../assets/comida/hawaiana.jpg';
+import Bacon from '../assets/comida/bacon-doble.jpg';
+import Crujipollo from '../assets/comida/crujipollo.jpg';
+import Pepperoni from '../assets/comida/pepperoni-burger.png';
+import Costra from '../assets/comida/costra-burgerr.png';
+import HotDog from '../assets/comida/hot-dog-sencillo.jpg';
+import Banderillas from '../assets/comida/banderillas.png';
+import NotFoto from '../assets/images/not-image.png';
+import AriWings from '../assets/comida/alitas.jpg';
+import Boneless from '../assets/comida/boneless.jpg';
+import DedosQueso from '../assets/comida/dedos-queso.jpg';
+import Jalapenos from '../assets/comida/jalapeno-relleno.jpg';
+import Nuggets from '../assets/comida/nuggets.jpg';
+import ArosCebolla from '../assets/comida/aros-cebolla.jpg';
+import Nachos from '../assets/comida/nachos.jpg';
+import EloteAsado from  '../assets/comida/elote-asado.jpg';
+import PapasCurly from '../assets/comida/papas-curly.jpg';
+import PapasGajo from '../assets/comida/papas-gajo.jpg';
 
 // Menu categories and items
 const menuCategories = [
   {
     id: 'hamburguesas',
-    name: 'Hamburguesas al Carbón',
+    name: 'Bububurgers',
     items: [
       {
-        title: 'Bubu Classic',
-        description: 'Carne de res a la parrilla, queso cheddar, lechuga, tomate, cebolla y nuestra salsa especial',
-        price: '$120',
-        imageUrl: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'La Sensata',
+        description: '100 gr. De carne de res sazonada con la receta secreta de la casa. Lechuga, jitomate, cebolla caramelizada, pepinillos, chiles, catsup, mostaza y mayonesa.',
+        imageUrl: Sensata,
       },
       {
-        title: 'Doble Carne',
-        description: 'Doble carne, doble queso, lechuga, tomate, cebolla y salsa especial',
-        price: '$160',
-        imageUrl: 'https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Doble Moral',
+        description: 'Dos carnes de 100 gr. de res sazonadas con la receta secreta de la casa. Lechuga, jitomate, cebolla caramelizada, pepinillos, chiles, catsup, mostaza y mayonesa.',
+        imageUrl: Doble,
       },
       {
-        title: 'La Explosiva',
-        description: 'Carne de res, queso, jalapeños, guacamole y salsa chipotle',
-        price: '$150',
-        imageUrl: 'https://images.pexels.com/photos/1556698/pexels-photo-1556698.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'La Olímpica',
+        description: 'Ex-qui-si-ta, simplemente el mejor balance de sabor, 100 gr. de carne de res sazonada con la receta secreta de la casa, gratinada con queso manchego, tocino, y un par de deliciosos aros de cebolla bañados en aderezo blue-cheese.',
+        imageUrl: Olimpica,
       },
       {
-        title: 'Hawaiana',
-        description: 'Carne de res, queso, piña a la parrilla, tocino y salsa teriyaki',
-        price: '$140',
-        imageUrl: 'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Tropical - Hawaiana',
+        description: 'La inconfundible hamburguesa hawaiana con su deliciosa piña tropical, asada lentamente a la parrilla, jamón Virginia, queso manchego y su tocino bien frito a la plancha. ¡Esta Bububurger te hará bailar el Waikiki!',
+        imageUrl: Hawaiana,
+      },
+      {
+        title: 'Bacon Western',
+        description: 'Esta hamburguesa te hará sentir en el viejo Oeste por su selecto tocino bien doradito, su queso manchego y un delicado toque de salsa BBQ. ¡Así que ponte las botas, el sombrero de cowboy y prepárate para bailar el Payaso de Rodeo… ajúa!',
+        imageUrl: Bacon,
+      },
+      {
+        title: 'Crujipollo',
+        description: 'Para los fanáticos del pollo les tenemos esta maravillosa Bububurger de pollo extra crunchy, puedes pedirla al natural (Como dios la trajo al mundo) o bañadita en cualquiera de nuestras salsas de la casa, además viene con un toque de aderezo blue-cheese.',
+        imageUrl: Crujipollo,
+      },
+      {
+        title: 'Pepperoni Burger',
+        description: 'La Bububurger molto Italiana! Fue especialmente diseñada para los amantes de las pipshas, te aseguramos que te hará recordar en cada bocado el rico sabor de una rebanada de pizza, lleva extra queso manchego, pepperoni y salsa italiana. buon appetito!',
+        imageUrl: Pepperoni,
+      },
+      {
+        title: 'La Costra Burger',
+        description: 'Nuestra Bububurger consentida, es una delicia por su crujiente costra de queso con tocino frito y un toque de aderezo secreto, receta de la casa. Puedes pedirla sencilla o doble, y si te animas por la doble, te espera una doble costra de queso con tocino. ¡Crunchy, crunchy!',
+        imageUrl: Costra,
       },
     ],
   },
   {
     id: 'hotdogs',
-    name: 'Hot-Dogs & Banderillas',
+    name: 'Hot-Dogs Jumbo & Banderillas',
     items: [
       {
-        title: 'Hot-Dog Clásico',
-        description: 'Salchicha de res, cebolla, tomate, mayonesa, mostaza y ketchup',
-        price: '$70',
-        imageUrl: 'https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Sencillito y Sin Rodeos',
+        description: '35 cm. De salchicha de pavo, deliciosamente frita, acompañado de 70 gr. de papas a la francesa sazonadas con polvos mágicos, jitomate, cebolla, chiles picados, mostaza, mayonesa y catsup.  ¡Un deleite!',
+        imageUrl: HotDog,
       },
       {
-        title: 'Hot-Dog Chili',
-        description: 'Salchicha de res, chili con carne, queso y jalapeños',
-        price: '$90',
-        imageUrl: 'https://images.pexels.com/photos/4518658/pexels-photo-4518658.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Hot-Dog con Tocino',
+        description: '35 cm. De salchicha de pavo, deliciosamente frita, acompañado de 70 gr. de papas a la francesa sazonadas con polvos mágicos, jitomate, cebolla, chiles picados, mostaza, mayonesa y catsup.  ¡Un deleite!',
+        imageUrl: HotDog,
       },
       {
-        title: 'Banderilla Sencilla',
-        description: 'Salchicha, tocino y queso cheddar',
-        price: '$60',
-        imageUrl: 'https://images.pexels.com/photos/4109111/pexels-photo-4109111.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Hot-Dog Hawaiano',
+        description: '35 cm. De salchicha de pavo, deliciosamente frita, acompañado de 70 gr. de papas a la francesa sazonadas con polvos mágicos, jitomate, cebolla, chiles picados, mostaza, mayonesa y catsup.  ¡Un deleite!',
+        imageUrl: HotDog,
       },
       {
-        title: 'Banderilla Especial',
-        description: 'Salchicha, tocino, queso, chiles toreados y salsa BBQ',
-        price: '$80',
-        imageUrl: 'https://images.pexels.com/photos/3926133/pexels-photo-3926133.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Hot-Dog Italiano',
+        description: '35 cm. De salchicha de pavo, deliciosamente frita, acompañado de 70 gr. de papas a la francesa sazonadas con polvos mágicos, jitomate, cebolla, chiles picados, mostaza, mayonesa y catsup.  ¡Un deleite!',
+        imageUrl: HotDog,
+      },
+      {
+        title: 'Hot-Dog Salchicha de Res',
+        description: 'Incididunt veniam pariatur pariatur cillum irure qui incididunt enim. Amet minim fugiat et enim. Laborum fugiat sunt id duis ea quis fugiat deserunt',
+        imageUrl: NotFoto,
+      },
+      {
+        title: 'Banderillas',
+        description: 'Banderillas rellenas de queso manchego, acompañadas de una porción de papas a la francesa sazonadas con nuestros polvos mágicos.',
+        imageUrl: Banderillas,
       },
     ],
   },
   {
     id: 'alitas',
-    name: 'Alitas y Boneless',
+    name: 'Ari-Wings & Boneless',
     items: [
       {
-        title: 'Alitas BBQ',
-        description: '10 piezas de alitas bañadas en nuestra salsa BBQ casera',
-        price: '$140',
-        imageUrl: 'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Ari-Wings',
+        description: 'Muchos presumen tener las mejores alitas... pero las nuestras sí lo demuestran. Están tan grandes que parecen piernitas de pollo, bien jugosas, bien bañadas y servidas con su lechuguita y un toque de ranch o bluecheese. 🔥 Te retamos a que te comas solo una... ¡imposible!',
+        imageUrl: AriWings,
       },
       {
-        title: 'Alitas Buffalo',
-        description: '10 piezas de alitas bañadas en salsa buffalo picante',
-        price: '$140',
-        imageUrl: 'https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=1600',
-      },
-      {
-        title: 'Boneless BBQ',
-        description: 'Trozos de pechuga de pollo empanizados con salsa BBQ',
-        price: '$130',
-        imageUrl: 'https://images.pexels.com/photos/5718073/pexels-photo-5718073.jpeg?auto=compress&cs=tinysrgb&w=1600',
-      },
-      {
-        title: 'Boneless Buffalo',
-        description: 'Trozos de pechuga de pollo empanizados con salsa buffalo picante',
-        price: '$130',
-        imageUrl: 'https://images.pexels.com/photos/6210747/pexels-photo-6210747.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Chicken Boneless',
+        description: '¡Sin huesos, sin excusas! Nuestros Boneless son puro placer: pollo jugoso, crujiente por fuera, bañado en la salsa que más te prende. ¿Blue cheese o ranch? Tú mandas.💥 Advertencia: este manjar ha sido culpable de muchas lamidas de dedos… y de platos vacíos en segundos.',
+        imageUrl: Boneless,
       },
     ],
   },
   {
     id: 'snacks',
-    name: 'Snacks',
+    name: 'Entradas & Snacks',
     items: [
       {
-        title: 'Papas Bubu',
-        description: 'Papas fritas con nuestro sazón especial',
-        price: '$60',
-        imageUrl: 'https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Bubu-Dedos de Queso',
+        description: '6 Deditos de queso fritos por fuera con un toque delicado de especias y por dentro queso mozzarella derretido, acompañados con salsa tipo italiana. ¡Cuidado no te muerdas tus propios dedos, que te van a quedar cortos para pedir más! ',
+        imageUrl: DedosQueso,
       },
       {
-        title: 'Aros de Cebolla',
-        description: 'Crujientes aros de cebolla empanizados',
-        price: '$70',
-        imageUrl: 'https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Bubu-Chiles Rellenos',
+        description: '6 Chiles jalapeños atrevidos rellenos de queso Philadelphia y empanizados por fuera, acompañados de Ketchup Heinz y queso amarillo tipo cheddar, ¡serán el remedio para tu antojo desenfrenado! ',
+        imageUrl: Jalapenos,
       },
       {
-        title: 'Nachos con Queso',
-        description: 'Totopos con queso derretido, guacamole, pico de gallo y crema',
-        price: '$90',
-        imageUrl: 'https://images.pexels.com/photos/1108775/pexels-photo-1108775.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Bubu-Nuggets',
+        description: 'Nuestros Nuggets de pechuga de pollo Pilgrim’s Pride (10 pzs), ¡Crujientes y dorados siempre! Acompañados de Kétchup Heinz y queso amarillo tipo Cheddar. ',
+        imageUrl: Nuggets,
       },
       {
-        title: 'Nachos Supremos',
-        description: 'Totopos con carne, queso, guacamole, jalapeños, pico de gallo y crema',
-        price: '$120',
-        imageUrl: 'https://images.pexels.com/photos/13998616/pexels-photo-13998616.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Bubu-Aros de Cebolla',
+        description: 'Perfectos aros de cebolla fritos y crujientes (10 pzs), acompañados con aderezo de blue cheese o ranch. ¡Te aseguramos que si los aros Olímpicos tuvieran sabor, a estos sabrían! ',
+        imageUrl: ArosCebolla,
+      },
+      {
+        title: 'Bubu-Nachos Chilibean',
+        description: 'Crujientes nachos acompañados con una deliciosa mezcla de chili bean, a base de carne molida de res, frijoles, salsa italiana, servidos con rodajas de jalapeño y abundante queso amarillo tipo Cheddar. ¡Perfectos para compartir!',
+        imageUrl: Nachos,
+      },
+      {
+        title: 'Costillas de Elote Amarillo',
+        description: 'Lorem Ipsum dolor sit amet, Incididunt veniam pariatur pariatur cillum irure qui incididunt enim. Amet minim fugiat et enim. Laborum fugiat sunt id duis ea quis fugiat deserunt',
+        imageUrl: NotFoto,
+      },
+      {
+        title: 'Elote Asado',
+        description: 'Lorem Ipsum dolor sit amet, Incididunt veniam pariatur pariatur cillum irure qui incididunt enim. Amet minim fugiat et enim. Laborum fugiat sunt id duis ea quis fugiat deserunt',
+        imageUrl: EloteAsado,
+      },
+    ],
+  },
+  {
+    id: 'papas',
+    name: 'Papas',
+    items: [
+      {
+        title: 'Papas Curly',
+        description: 'Deliciosas papas espiral delicadamente sazonadas y muy crujientes, acompañadas con Kétchup Heinz y queso amarillo tipo Cheddar.',
+        imageUrl: PapasCurly,
+      },
+      {
+        title: 'Papas Gajo',
+        description: 'Grandiosas papas gajo en cortes de gran tamaño, doradas por fuera y suaves por dentro, acompañadas de Kétchup Heinz y queso amarillo tipo Cheddar.',
+        imageUrl: PapasGajo,
+      },
+      {
+        title: 'Cerveza Nachional',
+        description: 'Botella de cerveza nacional',
+        price: '$50',
+        imageUrl: 'https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      },
+      {
+        title: 'Refresco',
+        description: 'Vaso grande de refresco de tu elección',
+        price: '$35',
+        imageUrl: 'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=1600',
       },
     ],
   },
@@ -230,7 +298,7 @@ const MenuPage: React.FC = () => {
                 Todo preparado con ingredientes frescos y nuestras recetas originales.
               </p>
             </div>
-            <ChefCharacter action="cooking" className="w-40 h-40 mt-8 md:mt-0" />
+            <ChefCharacter action="cooking" className="w-45 h-40 mt-8 md:mt-0" />
           </div>
         </div>
       </div>

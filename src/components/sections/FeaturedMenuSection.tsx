@@ -17,11 +17,10 @@ const featuredItems = [
     category: 'Bestseller'
   },
   {
-    title: 'Costillas BBQ',
-    description: 'Jugosas Grilled Baby Back Ribs de cerdo, bien barnizadas con tu wing sauce favorita, sobre cama de lechuga fresca.Vienen acompañadas de un elotito dulce con mantequilla y nuestros polvitos mágicos que le dan el toque especial.',
-    price: '$315',
-    imageUrl: Costilla,
-    category: 'Perfecta'
+    title: 'Malteada Fresa',
+    description: 'Cremosa malteada de fresa, con helado de fresa y mermelada de fresa, con deliciosos toppings.',
+    price: '$130',
+    imageUrl: MalteadaFresa,
   },
   {
     title: 'Ari-Wings',
@@ -30,11 +29,12 @@ const featuredItems = [
     imageUrl: Alitas,
   },
   {
-    title: 'Malteada Fresa',
-    description: 'Cremosa malteada de fresa, con helado de fresa y mermelada de fresa, con deliciosos toppings.',
-    price: '$130',
-    imageUrl: MalteadaFresa,
-  }
+    title: 'Costillas BBQ',
+    description: 'Jugosas Grilled Baby Back Ribs de cerdo, bien barnizadas con tu wing sauce favorita, sobre cama de lechuga fresca.Vienen acompañadas de un elotito dulce con mantequilla y nuestros polvitos mágicos que le dan el toque especial.',
+    price: '$315',
+    imageUrl: Costilla,
+    category: 'Perfecta'
+  },
 ];
 
 const container = {

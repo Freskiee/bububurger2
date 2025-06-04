@@ -32,7 +32,7 @@ import PaqNug from '../assets/comida/paquete-nuggets.jpg';
 import PaqHot from '../assets/comida/paquete-hot-dog.jpg';
 import Refrescos from '../assets/comida/refrescos-todos.png';
 import SangriaPreparada from '../assets/comida/sangria-preparada.jpg';
-// import MalteadaChocolate from '../assets/comida/malteada-chocolate.jpg';
+import Energizantes from '../assets/comida/energizantes.png';
 
 
 // Menu categories and items
@@ -259,10 +259,9 @@ const menuCategories = [
         imageUrl: SangriaPreparada,
       },
       {
-        title: 'Cerveza Nacional',
-        description: 'Botella de cerveza nacional',
-        price: '$50',
-        imageUrl: 'https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Energy Drinks',
+        description: 'Volt Guaraná, Volt Mora',
+        imageUrl: Energizantes,
       },
       {
         title: 'Refresco',

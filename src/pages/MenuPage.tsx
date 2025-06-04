@@ -24,6 +24,16 @@ import Nachos from '../assets/comida/nachos.jpg';
 import EloteAsado from  '../assets/comida/elote-asado.jpg';
 import PapasCurly from '../assets/comida/papas-curly.jpg';
 import PapasGajo from '../assets/comida/papas-gajo.jpg';
+import PapasFrancesa from '../assets/comida/papas-francesa.jpg';
+import Caripapas from '../assets/comida/caripapas.jpg';
+import Costillas from '../assets/comida/costilla.jpg';
+import PaqBubu from '../assets/comida/paquete-burger.jpg';
+import PaqNug from '../assets/comida/paquete-nuggets.jpg';
+import PaqHot from '../assets/comida/paquete-hot-dog.jpg';
+import Refrescos from '../assets/comida/refrescos-todos.png';
+import SangriaPreparada from '../assets/comida/sangria-preparada.jpg';
+// import MalteadaChocolate from '../assets/comida/malteada-chocolate.jpg';
+
 
 // Menu categories and items
 const menuCategories = [
@@ -110,6 +120,17 @@ const menuCategories = [
     ],
   },
   {
+    id: 'costillas',
+    name: 'Costillas BBQ',
+    items: [
+      {
+        title: 'Bububurger Style',
+        description: '¡Llegaron las costillas que ni Thalía se imaginó! Jugosas Grilled Baby Back Ribs de cerdo, bien barnizadas con tu wing sauce favorita, sobre cama de lechuga fresca. Vienen acompañadas de un elotito dulce con mantequilla y nuestros polvitos mágicos que le dan el toque especial. ¿No ere de elote? Cámbialo por papitas sin costo. 😉',
+        imageUrl: Costillas,
+      },
+    ],
+  },
+  {
     id: 'alitas',
     name: 'Ari-Wings & Boneless',
     items: [
@@ -181,34 +202,61 @@ const menuCategories = [
         imageUrl: PapasGajo,
       },
       {
-        title: 'Cerveza Nachional',
-        description: 'Botella de cerveza nacional',
-        price: '$50',
-        imageUrl: 'https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Papas Francesas',
+        description: 'Generosa porción de papas corte recto, calientitas y bien fritas; acompañadas de Kétchup Heinz y queso amarillo tipo Cheddar. ¡Obviamente sazonadas con nuestros polvos mágicos!',
+        imageUrl: PapasFrancesa,
       },
       {
-        title: 'Refresco',
-        description: 'Vaso grande de refresco de tu elección',
-        price: '$35',
-        imageUrl: 'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Cari-Papas',
+        description: 'Simpáticas papas en forma de carita feliz esponjaditas, fritas y calientitas, acompañadas de Kétchup Heinz y queso amarillo tipo Cheddar.',
+        imageUrl: Caripapas,
+      },
+      {
+        title: 'Papas Waffle',
+        description: 'Pide estas bellezas de papas en forma de Waffle, crujientes y deliciosas, acompañadas con Kétchup Heinz y queso amarillo tipo Cheddar.',
+        imageUrl: NotFoto,
       },
     ],
+  },
+  {
+    id: 'menu-infantil',
+    name: 'Menu Infantil',
+    items: [
+      {
+        title: 'Paquete Bububurger',
+        description: 'Deliciosa Bububurger sencilla con queso manchego + 5 divertidas papas carita feliz y una chaparrita.',
+        imageUrl: PaqBubu,
+      },
+      {
+        title: 'Paquete Nuggets',
+        description: '5 Nuggets + 5 divertidas papas carita feliz y una chaparrita.',
+        imageUrl: PaqNug,
+      },
+      {
+        title: 'Paquete Hot-Dog',
+        description: 'Hot Dog sencillo + 5 papas carita feliz y una chaparrita.',
+        imageUrl: PaqHot,
+      },
+      {
+        title: 'Paquete Deditos de Queso',
+        description: '5 Dedos de queso mozzarella + 5 papas carita feliz y una chaparrita.',
+        imageUrl: NotFoto,
+      },
+    ]
   },
   {
     id: 'bebidas',
     name: 'Bebidas',
     items: [
       {
-        title: 'Malteada Oreo',
-        description: 'Cremosa malteada de vainilla con galletas Oreo',
-        price: '$65',
-        imageUrl: 'https://images.pexels.com/photos/3727250/pexels-photo-3727250.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Nuestros Chescos',
+        description: 'Coca-Cola, Coca sin azúcar, Coca Light, Fanta, Delaware Punch, Sidral Mundet, Mundet rojo, Sprite, Fresca, Sangría Señorial, Agua Mineral.',
+        imageUrl: Refrescos,
       },
       {
-        title: 'Limonada',
-        description: 'Refrescante limonada natural con menta',
-        price: '$45',
-        imageUrl: 'https://images.pexels.com/photos/158053/fresh-orange-juice-squeezed-refreshing-citrus-158053.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Bebidas Preparadas',
+        description: 'Tehuacán preparado sal y limón, Sangría Señorial preparada chile, salsa y limón, Naranjada natural o mineral, Limonada natural o mineral',
+        imageUrl: SangriaPreparada,
       },
       {
         title: 'Cerveza Nacional',

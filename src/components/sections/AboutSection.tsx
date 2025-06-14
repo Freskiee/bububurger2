@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
           >
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-white rounded-full shadow-xl overflow-hidden">
+              <div className="w-48 h-48 md:w-64 md:h-64 bg-white rounded-full shadow-xl overflow-hidden">
                 <img 
                   src={LogoBubu}
                   alt="Grilling burgers" 
@@ -87,7 +87,7 @@ const AboutSection: React.FC = () => {
               </div>
               <ChefCharacter 
                 action="greeting" 
-                className="w-32 h-42 absolute -bottom-0 -right-4"
+                className="w-24 h-32 absolute -bottom-0 -right-4"
               />
             </div>
           </motion.div>

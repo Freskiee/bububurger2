@@ -264,21 +264,24 @@ const menuCategories = [
         imageUrl: Energizantes,
       },
       {
-        title: 'Refresco',
-        description: 'Vaso grande de refresco de tu elección',
-        price: '$35',
-        imageUrl: 'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        title: 'Sodas Italianas',
+        description: 'Limonada de Fresa Salvaje con Perlas Explosivas, Limonada de Mora Azul con Perlas Explosivas.',
+        imageUrl: NotFoto,
+      },
+      {
+        title: 'Bebidas de Panditas',
+        description: 'Yakult, Refresco de Lima Limón y Gomitas de Panditas, Escarchado de Sabores.',
+        imageUrl: NotFoto,
       },
     ],
   },
   {
     id: 'postres',
-    name: 'Postres',
+    name: 'Malteadas y Postres',
     items: [
       {
-        title: 'Brownie con Helado',
-        description: 'Brownie caliente con helado de vainilla y salsa de chocolate',
-        price: '$80',
+        title: 'Bubu-Malteadas',
+        description: 'Preparadas con leche deslactosada, helado e ingredientes de primera calidad, servidas con un delicioso topping de crema batida y chispas de colores, chocolate, mazapán, chicle o galleta. Sabores: Oreo, Mazapán de la Rosa, Algodón de Azúcar, Chocolate, Fresa, Frutos Rojos, Vainilla, Chicle Azul, Chicle Rosa. ',
         imageUrl: 'https://images.pexels.com/photos/3992134/pexels-photo-3992134.jpeg?auto=compress&cs=tinysrgb&w=1600',
       },
       {
